@@ -35,19 +35,19 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
-def one(input1, input2):
-	if (len(input1) == len(input2)):
-		print(input1,input2)
-	if (len(input1) < len(input2)):
-		print(input2)
-	# else: 
-	# 	print(input1)
-	if (len(input1) > len(input2)):
-		print(input1)
-input1 = input(str("Enter First String: "))
-input2 = input(str("Enter Second String: "))
+# def one(input1, input2):
+# 	if (len(input1) == len(input2)):
+# 		print(input1,input2)
+# 	if (len(input1) < len(input2)):
+# 		print(input2)
+# 	# else: 
+# 	# 	print(input1)
+# 	if (len(input1) > len(input2)):
+# 		print(input1)
+# input1 = input(str("Enter First String: "))
+# input2 = input(str("Enter Second String: "))
 
-one(input1,input2)
+# one(input1,input2)
 
 # return ""
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
@@ -90,13 +90,13 @@ one(input1,input2)
 
 	# How do we ignore case in a String? help(str) may offer some insight.
 
-def three(input):
-	vowel = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
-	return len([i for i in input if i in vowel])
+# def three(input):
+# 	vowel = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+# 	return len([i for i in input if i in vowel])
 
-input = input("Enter a word to count vowels:")
+# input = input("Enter a word to count vowels:")
 
-print(three(input))
+# print(three(input))
 
 
 
@@ -121,17 +121,17 @@ print(three(input))
 	# Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 
-def four(input):
-    if "cie" in input:
-        return False
-    elif "cei" in input:
-        return True
-    elif "ei" in input:
-        return False
-    elif "ie" in input:
-        return True
-    else:
-        return True
+# def four(input):
+#     if "cie" in input:
+#         return False
+#     elif "cei" in input:
+#         return True
+#     elif "ei" in input:
+#         return False
+#     elif "ie" in input:
+#         return True
+#     else:
+#         return True
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -151,7 +151,14 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
+    if input == 0:
+        return 1
+    else:
+        return input * five(input-1)
+input=int(input("Input a number to compute the factiorial : "))
+
+print(five(input))
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -223,6 +230,7 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
+	
 	return 0
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
