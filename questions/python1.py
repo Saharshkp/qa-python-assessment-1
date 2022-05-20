@@ -35,19 +35,19 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
-# def one(input1, input2):
-# 	if (len(input1) == len(input2)):
-# 		print(input1,input2)
-# 	if (len(input1) < len(input2)):
-# 		print(input2)
-# 	# else: 
-# 	# 	print(input1)
-# 	if (len(input1) > len(input2)):
-# 		print(input1)
-# input1 = input(str("Enter First String: "))
-# input2 = input(str("Enter Second String: "))
+def one(input1, input2):
+	if (len(input1) == len(input2)):
+		print(input1,input2)
+	if (len(input1) < len(input2)):
+		print(input2)
+	# else: 
+	# 	print(input1)
+	if (len(input1) > len(input2)):
+		print(input1)
+input1 = input(str("Enter First String: "))
+input2 = input(str("Enter Second String: "))
 
-# one(input1,input2)
+one(input1,input2)
 
 # return ""
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
@@ -71,8 +71,8 @@
 
 	# No hints for this question
 
-def two(arg1):
-	return "null"
+# def two(arg1):
+# 	return "null"
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -91,8 +91,8 @@ def two(arg1):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def three(input):
-  vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
-  return len([i for i in input if i in vowels])
+	vowel = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+	return len([i for i in input if i in vowel])
 
 input = input("Enter a word to count vowels:")
 
@@ -122,7 +122,16 @@ print(three(input))
 
 
 def four(input):
-    return False
+    if "cie" in input:
+        return False
+    elif "cei" in input:
+        return True
+    elif "ei" in input:
+        return False
+    elif "ie" in input:
+        return True
+    else:
+        return True
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
